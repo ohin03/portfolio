@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Ohin's Portfolio</title>  
+</head>
+
+<body>
+  <!-- Bootstrap Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary-subtle fixed-top">
+    <div class="container">
+      <a class="navbar-brand fst-italic fw-bold" href="#">NF OHIN</a>
+      
+      <!-- Mobile Toggle Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-danger fw-bold" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        
+        <!-- Theme Toggle Button -->
+        <button class="btn btn-outline-primary ms-3" onclick="toggleTheme()">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section with proper spacing for fixed navbar -->
+  <header class="pt-5 mt-5">
+    <div class="container text-center">
+      <img src="ohin1.jpg" alt="Ohin" class="profile-img">
+      <h1 class="text-primary fw-bold">Nur Foisal Ohin</h1>
+      <h2 class="text-danger">Front-End Developer | CSE Student</h2>
+      <a href="cv.pdf" download><button class="btn btn-primary">📄 Download CV</button></a>
+    </div>
+  </header>
+
+  <div class="container">
+    <section id="about" class="bg-info-subtle">
+      <h3>👨‍🎓 About Me</h3>
+      <p>
+        I'm <b>Nur Foisal Ohin</b>, a Computer Science & Engineering student (4th semester).  
+        I love building modern web applications using <b>HTML, CSS, JavaScript, Bootstrap, and React.js</b>.  
+        My goal is to become a professional <b>Full-Stack Web Developer</b>.
+      </p>
+    </section>
+
+    <section id="education">
+      <h3>🎓 Education</h3>
+      <ul>
+        <li>B.Sc. in Computer Science & Engineering (Ongoing)</li>
+        <li>4th Semester, [Feni University]</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="bg-success-subtle">
+      <h3>💼 Skills</h3>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <p>HTML ⭐⭐⭐⭐☆</p>
+          <p>CSS ⭐⭐⭐⭐☆</p>
+          <p>JavaScript ⭐⭐⭐☆☆</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <p>Bootstrap ⭐⭐⭐⭐☆</p>
+          <p>React.js ⭐⭐☆☆☆</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h3>📂 Projects</h3>
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Landing Page</h5>
+              <div class="mt-2">
+                <a href="https://github.com/ohin03/API.git" target="_blank" class="btn btn-sm btn-outline-primary">GitHub</a>
+                <a href="https://car-website-221.netlify.app/" target="_blank" class="btn btn-sm btn-outline-success">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Quiz App</h5>
+              <div class="mt-2">
+                <a href="https://github.com/ohin03/learn.git" target="_blank" class="btn btn-sm btn-outline-primary">GitHub</a>
+                <a href="https://quiz-app-2025-normal.netlify.app/" target="_blank" class="btn btn-sm btn-outline-success">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">🎮 Tic Tac Toe Game</h5>
+              <div class="mt-2">
+                <a href="https://github.com/ohin03/TIC-TOC-TOE-GAMES.git" target="_blank" class="btn btn-sm btn-outline-primary">GitHub</a>
+                <a href="https://tic-toc-toe-2025.netlify.app/" target="_blank" class="btn btn-sm btn-outline-success">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Calculator</h5>
+              <div class="mt-2">
+                <a href="https://github.com/ohin03/calculator.git" target="_blank" class="btn btn-sm btn-outline-primary">GitHub</a>
+                <a href="https://calculator-prtc-2025.netlify.app/" target="_blank" class="btn btn-sm btn-outline-success">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Shop Landing Page</h5>
+              <div class="mt-2">
+                <a href="https://github.com/ohin03/poject2.git" target="_blank" class="btn btn-sm btn-outline-primary">GitHub</a>
+                <a href="https://mobile-shop-landing-page-2025.netlify.app/" target="_blank" class="btn btn-sm btn-outline-success">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-danger-subtle">
+      <h3>📬 Contact Me</h3>
+      <div class="social-links text-center">
+        <a href="https://facebook.com/nur.foisal.ohin" target="_blank" class="btn btn-outline-primary m-2">🌐 Facebook</a>
+        <a href="mailto:ohinnurfoisal@gmail.com" target="_blank" class="btn btn-outline-danger m-2">📧 Gmail</a>
+        <a href="https://wa.me/8801971676314" target="_blank" class="btn btn-outline-success m-2">💬 WhatsApp</a>
+        <a href="http://www.fiverr.com/s/yvR8mN0" target="_blank"class="btn btn-outline-secondary m-2"rel="noopener noreferrer">🌏 Fiverr gig</a>
+      </div>
+    </section>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
