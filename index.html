@@ -3,97 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <title>Ohin's Portfolio</title>  
 </head>
 
 <body>
-  <!-- Bootstrap Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-primary-subtle fixed-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary-subtle fixed-top shadow-sm">
     <div class="container">
       <a class="navbar-brand fst-italic fw-bold" href="#">NF OHIN</a>
       
-      <!-- Mobile Toggle Button -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       
-      <!-- Navigation Links -->
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-danger fw-bold" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
+        <ul class="navbar-nav ms-auto gap-3">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link text-danger fw-bold" href="#featured-project">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        
-        <!-- Theme Toggle Button -->
         <button class="btn btn-outline-primary ms-3" onclick="toggleTheme()">🌙</button>
       </div>
     </div>
   </nav>
 
-  <!-- Header Section with proper spacing for fixed navbar -->
-  <header class="pt-5 mt-5">
+  <!-- Header -->
+  <header class="pt-5 mt-5 mb-4">
     <div class="container text-center">
-      <img src="ohin1.jpg" alt="Ohin" class="profile-img">
+      <img src="ohin1.jpg" alt="Ohin" class="profile-img mb-3">
       <h1 class="text-primary fw-bold">Nur Foisal Ohin</h1>
-      <h2 class="text-danger">Front-End Developer | CSE Student</h2>
-      <a href="cv.pdf" download><button class="btn btn-primary">📄 Download CV</button></a>
+      <h2 class="text-danger">Full Stack Developer | CSE Student</h2>
+      <a href="cv.pdf" download>
+        <button class="btn btn-primary mt-2">📄 Download CV</button>
+      </a>
     </div>
   </header>
 
   <div class="container">
-    <section id="about" class="bg-info-subtle">
+
+    <!-- About -->
+    <section id="about" class="bg-info-subtle p-4 rounded mb-4">
       <h3>👨‍🎓 About Me</h3>
       <p>
-        I'm <b>Nur Foisal Ohin</b>, a Computer Science & Engineering student (4th semester).  
-        I love building modern web applications using <b>HTML, CSS, JavaScript, Bootstrap, and React.js</b>.  
-        My goal is to become a professional <b>Full-Stack Web Developer</b>.
+        I'm <b>Nur Foisal Ohin</b>, a Computer Science & Engineering student (4th semester).<br>
+        I love building modern and responsive web applications using
+        <b>HTML, CSS, JavaScript, Bootstrap, React.js, Node.js, Express.js, MongoDB</b>, and
+        <b>Authentication systems</b>.<br>
+        I am currently working as a <b>Full-Stack Web Developer</b>, constantly improving my skills and building real-world projects.<br>
+        My long-term goal is to become a highly skilled and professional <b>Full-Stack Web Developer</b>.
       </p>
     </section>
 
-    <section id="education">
+    <!-- Education -->
+    <section id="education" class="mb-4">
       <h3>🎓 Education</h3>
       <ul>
         <li>B.Sc. in Computer Science & Engineering (Ongoing)</li>
-        <li>4th Semester, [Feni University]</li>
+        <li>4th Semester, Feni University</li>
       </ul>
     </section>
 
-    <section id="skills" class="bg-success-subtle">
+    <!-- Skills -->
+    <section id="skills" class="bg-success-subtle p-4 rounded mb-4">
       <h3>💼 Skills</h3>
       <div class="row">
-        <div class="col-md-6 col-sm-12">
-          <p>HTML ⭐⭐⭐⭐☆</p>
-          <p>CSS ⭐⭐⭐⭐☆</p>
-          <p>JavaScript ⭐⭐⭐☆☆</p>
+        <div class="col-md-6">
+          <p>HTML ⭐⭐⭐⭐⭐</p>
+          <p>CSS ⭐⭐⭐⭐⭐</p>
+          <p>JavaScript ⭐⭐⭐⭐☆</p>
+          <p>Bootstrap ⭐⭐⭐⭐⭐</p>
         </div>
-        <div class="col-md-6 col-sm-12">
-          <p>Bootstrap ⭐⭐⭐⭐☆</p>
-          <p>React.js ⭐⭐☆☆☆</p>
+        <div class="col-md-6">
+          <p>React.js ⭐⭐⭐⭐☆</p>
+          <p>Node.js ⭐⭐⭐⭐☆</p>
+          <p>Express.js ⭐⭐⭐⭐☆</p>
+          <p>MongoDB ⭐⭐⭐⭐☆</p>
         </div>
       </div>
     </section>
 
-    <section id="projects">
-      <h3>📂 Projects</h3>
+    <!-- Featured Project -->
+    <section id="featured-project" class="mt-5 mb-5">
+      <div class="p-4 rounded shadow bg-light text-center">
+
+        <h3 class="fw-bold text-primary mb-3">⭐ Featured Full-Stack Project</h3>
+
+        <h4 class="fw-bold text-danger">🩸 Blood Donation Management System</h4>
+        <p class="text-muted">
+          A complete MERN stack project with donor registration, admin login, image upload,  
+          and a full donor search system.
+        </p>
+
+        <div class="mt-3">
+          <a href="https://github.com/ohin03/mohipal-donater-group" 
+             class="btn btn-outline-primary btn-sm" target="_blank">GitHub</a>
+
+          <a href="https://mohipal-donater-group.vercel.app/" 
+             class="btn btn-outline-success btn-sm" target="_blank">Live Demo</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Frontend Projects -->
+    <section id="projects" class="mb-4">
+      <h3>📂 Front-End Projects</h3>
       <div class="row">
+
+        <!-- Project Card -->
         <div class="col-lg-6 col-md-12 mb-3">
-          <div class="card h-100">
+          <div class="card h-100 shadow-sm">
             <div class="card-body">
               <h5 class="card-title">Landing Page</h5>
               <div class="mt-2">
@@ -103,10 +127,12 @@
             </div>
           </div>
         </div>
+
+        <!-- Project Card -->
         <div class="col-lg-6 col-md-12 mb-3">
-          <div class="card h-100">
+          <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">4 page Website with Next Js project</h5>
+              <h5 class="card-title">Next.js 4 Page Website</h5>
               <div class="mt-2">
                 <a href="https://github.com/ohin03/emad_telecom.git" target="_blank" class="btn btn-sm btn-outline-primary">GitHub</a>
                 <a href="https://emad-telecom.vercel.app" target="_blank" class="btn btn-sm btn-outline-success">Live Demo</a>
@@ -114,8 +140,10 @@
             </div>
           </div>
         </div>
+
+        <!-- Project Card -->
         <div class="col-lg-6 col-md-12 mb-3">
-          <div class="card h-100">
+          <div class="card h-100 shadow-sm">
             <div class="card-body">
               <h5 class="card-title">Quiz App</h5>
               <div class="mt-2">
@@ -125,8 +153,10 @@
             </div>
           </div>
         </div>
+
+        <!-- Project Card -->
         <div class="col-lg-6 col-md-12 mb-3">
-          <div class="card h-100">
+          <div class="card h-100 shadow-sm">
             <div class="card-body">
               <h5 class="card-title">🎮 Tic Tac Toe Game</h5>
               <div class="mt-2">
@@ -136,8 +166,10 @@
             </div>
           </div>
         </div>
+
+        <!-- Project Card -->
         <div class="col-lg-6 col-md-12 mb-3">
-          <div class="card h-100">
+          <div class="card h-100 shadow-sm">
             <div class="card-body">
               <h5 class="card-title">Calculator</h5>
               <div class="mt-2">
@@ -147,8 +179,10 @@
             </div>
           </div>
         </div>
+
+        <!-- Project Card -->
         <div class="col-lg-6 col-md-12 mb-3">
-          <div class="card h-100">
+          <div class="card h-100 shadow-sm">
             <div class="card-body">
               <h5 class="card-title">Shop Landing Page</h5>
               <div class="mt-2">
@@ -158,19 +192,31 @@
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
-    <section id="contact" class="bg-danger-subtle">
+    <!-- Contact -->
+    <section id="contact" class="bg-danger-subtle p-4 rounded mb-5">
       <h3>📬 Contact Me</h3>
       <div class="social-links text-center">
         <a href="https://facebook.com/nur.foisal.ohin" target="_blank" class="btn btn-outline-primary m-2">🌐 Facebook</a>
         <a href="mailto:ohinnurfoisal@gmail.com" target="_blank" class="btn btn-outline-danger m-2">📧 Gmail</a>
         <a href="https://wa.me/8801971676314" target="_blank" class="btn btn-outline-success m-2">💬 WhatsApp</a>
-        <a href="http://www.fiverr.com/s/yvR8mN0" target="_blank"class="btn btn-outline-secondary m-2"rel="noopener noreferrer">🌏 Fiverr gig</a>
+        <a href="http://www.fiverr.com/s/yvR8mN0" target="_blank" class="btn btn-outline-secondary m-2">🌏 Fiverr</a>
       </div>
     </section>
+
   </div>
+
+    <!-- Footer -->
+  <footer class="bg-warning-subtle text-center text-dark py-4 mt-4 border-top">
+    <div class="container">
+      <p class="mb-1">© 2025 Nur Foisal Ohin. All Rights Reserved.</p>
+      
+    </div>
+  </footer>
+
 
   <script src="index.js"></script>
 </body>
