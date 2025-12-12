@@ -9,7 +9,8 @@
   <title>Ohin's Portfolio</title>  
 </head>
 
-<body>
+<body> 
+ 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-primary-subtle fixed-top shadow-sm">
     <div class="container">
@@ -38,9 +39,46 @@
       <img src="ohin1.jpg" alt="Ohin" class="profile-img mb-3">
       <h1 class="text-primary fw-bold">Nur Foisal Ohin</h1>
       <h2 class="text-danger">Full Stack Developer | CSE Student</h2>
-      <a href="cv.pdf" download>
+      <a href="oh.cv.jpg" download>
         <button class="btn btn-primary mt-2">📄 Download CV</button>
       </a>
+
+   <div class="hero">
+    <h1>Hi, I'm Ohin</h1>
+    <p>I am a <span id="typed"></span></p></div>
+
+
+  <script>
+    const words = ["Web Developer", "Frontend Developer", "MERN Developer", "Full Stack Developer"];
+    let i = 0, j = 0, isDeleting = false;
+
+    function typeEffect() {
+      const current = words[i];
+      const typed = document.getElementById("typed");
+
+      if (!isDeleting) {
+        typed.textContent = current.slice(0, j++);
+        if (j > current.length) {
+          isDeleting = true;
+          setTimeout(typeEffect, 800);
+          return;
+        }
+      } else {
+        typed.textContent = current.slice(0, j--);
+        if (j === 0) {
+          isDeleting = false;
+          i = (i + 1) % words.length;
+        }
+      }
+      setTimeout(typeEffect, isDeleting ? 60 : 120);
+    }
+
+    typeEffect();
+  </script>
+
+
+
+
     </div>
   </header>
 
@@ -50,7 +88,7 @@
     <section id="about" class="bg-info-subtle p-4 rounded mb-4">
       <h3>👨‍🎓 About Me</h3>
       <p>
-        I'm <b>Nur Foisal Ohin</b>, a Computer Science & Engineering student (4th semester).<br>
+        I'm <b>Nur Foisal Ohin</b>, a Computer Science & Engineering student (5th semester).<br>
         I love building modern and responsive web applications using
         <b>HTML, CSS, JavaScript, Bootstrap, React.js, Node.js, Express.js, MongoDB</b>, and
         <b>Authentication systems</b>.<br>
@@ -64,7 +102,7 @@
       <h3>🎓 Education</h3>
       <ul>
         <li>B.Sc. in Computer Science & Engineering (Ongoing)</li>
-        <li>4th Semester, Feni University</li>
+        <li>5th Semester, Feni University</li>
       </ul>
     </section>
 
@@ -204,15 +242,23 @@
         <a href="mailto:ohinnurfoisal@gmail.com" target="_blank" class="btn btn-outline-danger m-2">📧 Gmail</a>
         <a href="https://wa.me/8801971676314" target="_blank" class="btn btn-outline-success m-2">💬 WhatsApp</a>
         <a href="http://www.fiverr.com/s/yvR8mN0" target="_blank" class="btn btn-outline-secondary m-2">🌏 Fiverr</a>
+        
       </div>
-    </section>
+          <a href="https://www.facebook.com/share/1Dh5j4oQBe/?mibextid=wwXIfr" target="_blank" class="follow-btn d-flex align-items-center gap-2">
+          <i class="fab fa-facebook-f"></i> Follow My Page
+          </a>
 
-  </div>
+          <!-- Font Awesome CDN -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      </section>
+
+      </div>
 
     <!-- Footer -->
-  <footer class="bg-warning-subtle text-center text-dark py-4 mt-4 border-top">
+  <footer class="bg-secondary.bg-gradient text-center text-dark py-4 mt-4 border-top">
     <div class="container">
-      <p class="mb-1">© 2025 Nur Foisal Ohin. All Rights Reserved.</p>
+      <p class="mb-1">© 2026 Nur Foisal Ohin. All Rights Reserved.</p>
       
     </div>
   </footer>
