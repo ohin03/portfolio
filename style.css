@@ -160,6 +160,18 @@ header {
 
 
 
+.mm{
+  margin-top: 73px;
+  width: 60% !important;
+  max-width: 320px;
+  height: 600px;
+  background: radial-gradient(circle at center, #1e293b, #0f172a);
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.4);
+}
+
+
 
 
 /* Responsive Image Sizing */
