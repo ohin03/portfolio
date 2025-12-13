@@ -10,28 +10,70 @@
 </head>
 
 <body> 
- 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-primary-subtle fixed-top shadow-sm">
-    <div class="container">
-      <img src="logo.png" alt="Ohin" class="logo mb-3">
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto gap-3">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link text-danger fw-bold" href="#featured-project">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-        <button class="btn btn-outline-primary ms-3" onclick="toggleTheme()">🌙</button>
-      </div>
+ <!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-primary-subtle fixed-top shadow-sm">
+  <div class="container">
+
+    <img src="logo.png" alt="Ohin" class="logo">
+
+    <!-- Mobile Toggle (Offcanvas) -->
+    <button class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse d-none d-lg-flex">
+      <ul class="navbar-nav ms-auto gap-3">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item">
+          <a class="nav-link text-danger fw-bold" href="#featured-project">Projects</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <button class="btn btn-outline-primary ms-3" onclick="toggleTheme()">🌙</button>
     </div>
-  </nav>
+
+  </div>
+</nav>
+
+<!-- ================= OFFCANVAS (MOBILE) ================= -->
+<div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" style="color: red;">Menu</h5>
+    <button type="button" class="btn-close bg-danger" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <ul class="navbar-nav gap-3">
+      <li class="nav-item">
+        <a class="nav-link" href="#about" data-bs-dismiss="offcanvas">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#education" data-bs-dismiss="offcanvas">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills" data-bs-dismiss="offcanvas">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-danger fw-bold" href="#featured-project" data-bs-dismiss="offcanvas">
+          Projects
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a>
+      </li>
+    </ul>
+
+    <button class="btn btn-outline-primary mt-4 w-100" onclick="toggleTheme()">
+      🌙 Dark/Light mode
+    </button>
+  </div>
+</div>
 
   <!-- Header -->
   <header class="pt-5 mt-5 mb-4">

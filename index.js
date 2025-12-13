@@ -19,3 +19,25 @@ function checkVisibility() {
 
 window.addEventListener("scroll", checkVisibility);
 window.addEventListener("load", checkVisibility);
+
+
+// Offcanvas menu link scroll fix
+document.querySelectorAll('.offcanvas a.nav-link').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute('href');
+    const targetEl = document.querySelector(targetId);
+
+    const offcanvasEl = document.getElementById('mobileMenu');
+    const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+
+    if (offcanvas) {
+      offcanvas.hide();
+    }
+
+    setTimeout(() => {
+      targetEl.scrollIntoView({ behavior: 'smooth' });
+    }, 300); // offcanvas close animation time
+  });
+});
